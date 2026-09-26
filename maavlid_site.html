@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>МААВЛИД — Жизнь Пророка Мухаммада на карачаевском языке</title>
+<style>
+  :root{
+    --green-deep:#0b3d2e;
+    --green-mid:#11553f;
+    --gold:#c9a227;
+    --gold-soft:#e6cf8a;
+    --cream:#f8f4e9;
+    --ink:#2b2b2b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"Segoe UI", Arial, sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+  }
+  h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;}
+
+  /* ---- HERO ---- */
+  .hero{
+    background:linear-gradient(160deg,var(--green-deep) 0%,var(--green-mid) 55%,#0e4634 100%);
+    color:var(--cream);
+    text-align:center;
+    padding:72px 20px 60px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(201,162,39,.12), transparent 40%),
+      radial-gradient(circle at 80% 85%, rgba(201,162,39,.10), transparent 45%);
+    pointer-events:none;
+  }
+  .badge{
+    display:inline-block;
+    border:1px solid var(--gold);
+    color:var(--gold-soft);
+    border-radius:30px;
+    padding:6px 18px;
+    font-size:14px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:26px;
+  }
+  .hero h1{
+    font-size:clamp(42px,9vw,84px);
+    letter-spacing:6px;
+    color:#fff;
+    text-shadow:0 2px 12px rgba(0,0,0,.35);
+  }
+  .ornament{
+    margin:22px auto 18px;
+    display:block;
+    width:min(320px,70%);
+  }
+  .hero .subtitle{
+    font-size:clamp(17px,3.5vw,22px);
+    color:var(--gold-soft);
+    max-width:640px;
+    margin:0 auto 8px;
+  }
+  .hero .free{
+    color:#d7ead9;
+    font-size:15px;
+    margin-top:10px;
+  }
+  .btns{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:10px;
+    font-size:17px;
+    text-decoration:none;
+    transition:.25s;
+  }
+  .btn-gold{
+    background:var(--gold);
+    color:var(--green-deep);
+    font-weight:bold;
+  }
+  .btn-gold:hover{background:var(--gold-soft);}
+  .btn-ghost{
+    border:1.5px solid var(--gold-soft);
+    color:var(--cream);
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,.08);}
+
+  /* ---- SECTIONS ---- */
+  section{padding:60px 20px;max-width:860px;margin:0 auto;}
+  h2{
+    text-align:center;
+    color:var(--green-deep);
+    font-size:clamp(26px,5vw,34px);
+    margin-bottom:30px;
+  }
+  h2::after{
+    content:"";
+    display:block;
+    width:60px;height:3px;
+    background:var(--gold);
+    margin:14px auto 0;
+    border-radius:2px;
+  }
+  .card{
+    background:#fff;
+    border:1px solid #e7e0cd;
+    border-radius:14px;
+    padding:28px;
+    margin-bottom:20px;
+    box-shadow:0 4px 18px rgba(11,61,46,.06);
+  }
+  .card h3{color:var(--green-mid);margin-bottom:10px;font-size:20px;}
+  ul.clean{list-style:none;margin-top:6px;}
+  ul.clean li{padding-left:26px;position:relative;margin-bottom:10px;}
+  ul.clean li::before{
+    content:"";
+    position:absolute;left:0;top:10px;
+    width:10px;height:10px;
+    background:var(--gold);
+    transform:rotate(45deg);
+  }
+  .note{
+    background:#fdf7e4;
+    border-left:4px solid var(--gold);
+    border-radius:8px;
+    padding:18px 22px;
+    margin-top:8px;
+  }
+
+  /* ---- FOOTER ---- */
+  footer{
+    background:var(--green-deep);
+    color:#cfe3d4;
+    text-align:center;
+    padding:34px 20px;
+    font-size:14px;
+  }
+  footer .gold{color:var(--gold-soft);}
+
+  @media(max-width:480px){
+    .hero{padding:56px 16px 48px;}
+    .btns{flex-direction:column;align-items:center;}
+    .btn{width:min(300px,90%);text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="badge">Бесплатная электронная книга</div>
+  <h1>МААВЛИД</h1>
+  <svg class="ornament" viewBox="0 0 320 24" fill="none">
+    <line x1="0" y1="12" x2="130" y2="12" stroke="#c9a227" stroke-width="1.5"/>
+    <line x1="190" y1="12" x2="320" y2="12" stroke="#c9a227" stroke-width="1.5"/>
+    <rect x="146" y="2" width="20" height="20" transform="rotate(45 156 12)" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+    <rect x="152" y="8" width="8" height="8" transform="rotate(45 156 12)" fill="#c9a227"/>
+  </svg>
+  <p class="subtitle">Жизнь Пророка Мухаммада ﷺ<br>на карачаевском языке</p>
+  <p class="free">Читайте бесплатно — с телефона или компьютера, в любой точке мира</p>
+  <div class="btns">
+    <a class="btn btn-gold" href="#soon">Читать онлайн</a>
+    <a class="btn btn-ghost" href="#about">О книге</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>Об этой книге</h2>
+  <div class="card">
+    <p>«Маавлид» повествует о жизни Пророка Мухаммада ﷺ. Книга написана на карачаевском языке и создана для того, чтобы каждый мог прочитать её на родной речи.</p>
+    <br>
+    <p>Этот сайт сделан с одной целью: не у всех есть возможность найти или купить такую книгу. Здесь она будет доступна каждому — совершенно бесплатно.</p>
+  </div>
+  <div class="card">
+    <h3>Кому будет полезна</h3>
+    <ul class="clean">
+      <li>Тем, кто хочет узнать о жизни Пророка ﷺ на карачаевском языке</li>
+      <li>Тем, у кого нет доступа к бумажной книге</li>
+      <li>Молодому поколению — чтобы родная речь и знание жили вместе</li>
+    </ul>
+  </div>
+</section>
+
+<section id="soon">
+  <h2>Читать онлайн</h2>
+  <div class="note">
+    <p><strong>Текст книги скоро появится.</strong></p>
+    <p>Мы переносим книгу на сайт: оцифровываем страницы и разбиваем текст на главы. Загляните сюда чуть позже — или напишите нам, и мы сообщим, когда книга будет полностью доступна.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Связаться с нами</h2>
+  <div class="card">
+    <p>Если у вас есть вопросы, нашли ошибку в тексте или хотите помочь проекту — напишите нам.</p>
+    <br>
+    <p><strong>Электронная почта:</strong> ваш-email@example.com</p>
+    <p><strong>Телефон / WhatsApp:</strong> +7 (___) ___-__-__</p>
+  </div>
+</section>
+
+<footer>
+  <p><span class="gold">МААВЛИД</span> · Жизнь Пророка Мухаммада ﷺ на карачаевском языке</p>
+  <p>Книга распространяется бесплатно</p>
+</footer>
+
+</body>
+</html>
